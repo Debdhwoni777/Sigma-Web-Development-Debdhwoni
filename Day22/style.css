@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+.box1{
+    text-align: center;
+    color: #000;
+    background-color: #EF5A6F;
+    width: 80vw;
+    height: 10vh;
+    margin: 23px auto;
+}
+.box1:hover{
+    background-color: #FFF1DB;
+}
+.box2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #D4BDAC;
+    width: 80vw;
+    height: 30vh;
+    margin: 23px auto;
+}
+.box2 p{
+    font-size: 1.3em;
+}
+.box2:hover{
+    background-color: #536493;
+}
+.box3{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #D4BDAC;
+    width: 80vmin;
+    height: 30vh;
+    margin: 23px auto;
+}

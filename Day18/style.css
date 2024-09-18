@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    background-color: rgb(156, 211, 221);
+    color: bisque;
+}
+.box1{
+    background-color: aquamarine;
+}
+.box2{
+    background-color: beige;
+}

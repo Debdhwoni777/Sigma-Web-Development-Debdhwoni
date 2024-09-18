@@ -1,0 +1,22 @@
+body{
+    background-image: url(download.jpg);
+    background-size: cover;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+}
+button{
+    border-radius: 25px;
+    color: gray;
+    background-color: white;
+
+}
+button:hover{
+    border-radius: 30PX;
+    color: white;
+    background-color: gray;
+
+}

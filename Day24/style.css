@@ -1,0 +1,17 @@
+.box1{
+    width: 150px;
+    padding: 34px;
+    border: 2px solid black;
+    background-color: gray;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.box2{
+    width: 150px;
+    padding: 34px; 
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    background-color: gray;
+    outline: 2px solid black;
+    outline-offset: 2px;
+    
+}

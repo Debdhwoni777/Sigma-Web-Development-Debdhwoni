@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+    <script>
+        function faultyCalculator() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const operation = document.getElementById("operation").value;
+            const resultDiv = document.getElementById("result");
+
+            // Generate a random number between 0 and 1
+            const randomChance = Math.random();
+            let result;
+
+            if (randomChance < 0.1) {
+                // 10% of the time perform a random incorrect operation
+                result = randomWrongOperation(num1, num2);
+                resultDiv.innerHTML = `Incorrect result: ${result}`;
+            } else {
+                // Perform the correct operation
+                switch (operation) {
+                    case '+':
+                        result = num1 - num2;
+                        break;
+                    case '-':
+                        result = num1 / num2;
+                        break;
+                    case '*':
+                        result = num1 + num2;
+                        break;
+                    case '/':
+                        if (num2 !== 0) {
+                            result = num1 ** num2;
+                        } else {
+                            resultDiv.innerHTML = "Error: Division by zero!";
+                            return;
+                        }
+                        break;
+                    default:
+                        resultDiv.innerHTML = "Invalid operation selected.";
+                        return;
+                }
+                resultDiv.innerHTML = `Correct result: ${result}`;
+            }
+        }
+
+        // Function to perform a random incorrect operation
+        function randomWrongOperation(num1, num2) {
+            const wrongOperations = [
+                num1 + num2 + 5, // Add 5 to the result
+                num1 - num2 - 3, // Subtract 3 from the result
+                num1 * num2 * 2, // Multiply the result by 2
+                num2 !== 0 ? num1 / num2 + 4 : 'Error' // Add 4 to division result, check for zero
+            ];
+            // Select a random incorrect result from the list
+            return wrongOperations[Math.floor(Math.random() * wrongOperations.length)];
+        }
+    </script>
+</head>
+<body>
+    <h1>Faulty Calculator</h1>
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" required><br><br>
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" required><br><br>
+
+    <label for="operation">Choose operation:</label>
+    <select id="operation">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (*)</option>
+        <option value="/">Division (/)</option>
+    </select><br><br>
+
+    <button onclick="faultyCalculator()">Calculate</button>
+
+    <div id="result"></div>
+</body>
+</html>
+

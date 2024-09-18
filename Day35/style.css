@@ -1,0 +1,11 @@
+.boxes::before{
+    content: "I am a good boy";
+}
+::selection{
+    background-color: aqua;
+    color: aquamarine;
+}
+.box::first-letter{
+    color: red;
+    font-size: 50px;
+}

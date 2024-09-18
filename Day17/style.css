@@ -1,0 +1,16 @@
+#id{
+    background-color: red;
+    
+} 
+#id>#i{
+    color: yellow;
+}
+a:visited{
+    color: rgb(255, 0, 0);
+}
+a:hover{
+    color: brown;
+}
+#id:hover{
+    color: brown;
+}

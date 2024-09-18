@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Nerko One;
+}
+body{
+    background-color: #FABC3F;
+}
+nav{
+    height: 30px;
+    background-color: #E85C0D;
+}
+ul li{
+    font-size: 30px;
+    list-style: none;
+    display: inline; 
+    padding-left: 200px;
+}

@@ -1,0 +1,52 @@
+body{
+    background-color: antiquewhite;
+}
+.container{
+    height: 80vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+.item{
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 4px;
+    background-color: sandybrown;
+    font-size: 50px;
+}
+.order-1{
+    flex-grow: 12;
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 10;
+}
+.order-4{
+    order: 4;
+}
+.order-5{
+    order: 5;
+}
+.order-6{
+    order: 6;
+}
+.order-7{
+    order: 7;
+}
+.order-8{
+    order: 8;
+}
+.order-9{
+    order: 9;
+}
+.order-10{
+    order: 3;
+}

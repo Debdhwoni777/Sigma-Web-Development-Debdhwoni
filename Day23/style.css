@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: inline-block;
+    margin: 40px;
+    padding: 40px;
+    border: 2px solid black;
+    width: 50px;
+    width: 300px;
+}
+.box1{
+    display: inline-flex;
+    justify-content: center;
+}
+.spam1{
+    margin: 40px;
+    padding: 40px;
+    border: 2px solid black;
+    width: 200px;
+}

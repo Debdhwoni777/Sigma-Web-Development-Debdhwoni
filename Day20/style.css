@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+    padding-top: 50px;
+}
+.frist{
+    background-color: yellow;
+    color: red;
+    text-decoration: underline;
+}
+.second{
+    background-color: blue;
+    color:  white;
+    
+}

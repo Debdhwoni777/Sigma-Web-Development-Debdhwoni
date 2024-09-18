@@ -1,0 +1,30 @@
+*{
+    color: white;
+}
+body{
+    background-color: black;
+}
+h1{
+    font-family: 'Lucida Sans';
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: bisque;
+    text-decoration-style: dashed;
+    text-decoration-thickness: ;
+
+} 
+#me1{
+   color: bisque;
+}
+#me2{
+   color: bisque;
+}
+#me3{
+   color: bisque;
+}
+#me4{
+   color: bisque;
+}
+#me5{
+   color: bisque;
+}

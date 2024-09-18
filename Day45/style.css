@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 80vh;
+    width: 80vw;
+    background-color: antiquewhite;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+    border-radius: 50%;
+    /* transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+    /* transition: all 3s ease-in-out 1s; */
+}
+.box1{
+    transform: translateX(30%) translateY(30%);
+}
+.box:hover{
+    transition: box1 3s ease-in-out 1s;
+}
+

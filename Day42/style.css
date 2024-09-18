@@ -1,0 +1,17 @@
+.contaner{
+    height: 80vh;
+    width: 70vw;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: beige;
+    border: 2px solid black;
+    /* transform: rotateX(40deg); */
+    /* transform: scaleZ(1.5);*/
+    transform: skew(5deg);
+}

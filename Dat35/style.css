@@ -1,0 +1,6 @@
+.box:first-child{
+    background-color: chocolate;
+}
+.box::first-letter{
+    color: aqua;
+}

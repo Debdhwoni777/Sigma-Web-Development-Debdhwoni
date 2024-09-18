@@ -1,0 +1,30 @@
+*{
+    margin-bottom: 10px;
+}
+div{
+    height: 200px;
+    width: 200px;
+}
+input{
+    width: 150px;
+    height: 20px;
+    background-color: aquamarine;
+    color: whitesmoke;
+
+}
+input:hover{
+    background-color: aqua;
+}
+
+#sub{
+    width: 150px;
+    height: 20px;
+    color: black;
+    background-color: yellow;
+}
+#sub:hover{
+    width: 155px;
+    height: 25px;
+    color: black;
+    background-color: rgb(159, 194, 6);
+}

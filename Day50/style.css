@@ -1,0 +1,12 @@
+img{
+    margin: 20px;
+}
+.img1{
+    filter: brightness(100%);
+}
+.img2{
+    filter: drop-shadow(16px 16px 20px red) invert(7%);
+}
+.img3{
+    filter: grayscale(30%);
+}
