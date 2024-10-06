@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Simulator</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="message" id="message">Initializing Hacking...</div>
+
+    <script>
+        const messages = [
+            "Initializing Hacking...",
+            "Reading your Files...",
+            "Password files Detected...",
+            "Sending all passwords and personal files to server...",
+            "Cleaning up..."
+        ];
+
+        let index = 0;
+
+        function showNextMessage() {
+            if (index < messages.length) {
+                const randomDelay = Math.floor(Math.random() * 7000) + 1000; // Random delay between 1 to 7 seconds
+                document.getElementById("message").textContent = messages[index];
+                index++;
+
+                setTimeout(showNextMessage, randomDelay);
+            } else {
+                document.getElementById("message").textContent = "Hacking Completed!";
+            }
+        }
+
+        setTimeout(showNextMessage, 1000); // Start after 1 second
+    </script>
+</body>
+</html>

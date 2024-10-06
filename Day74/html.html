@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 74</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: aquamarine;
+            padding: 14px;
+            margin: 15px;
+            height: 200px
+        }
+        .box1{
+            background-color: rgb(238, 255, 0);
+            padding: 14px;
+            margin: 15px;
+            height: 100px;
+
+        }
+        .box2{
+            background-color: rgb(224, 27, 27);
+            padding: 14px;
+            margin: 15px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="box2"></div>
+        </div>
+    </div>
+    <script>
+        function getRandomColor(){
+            let val1 = Math.ceil(0 + Math.random()* 255);
+            let val2 = Math.ceil(0 + Math.random()* 255);
+            let val3 = Math.ceil(0 + Math.random()* 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("Container Is Click")
+        })
+        document.querySelector(".box1").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("Box 1 Is Click")
+        })
+        document.querySelector(".box2").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("Box 2 Is Click")
+        })
+        setInterval(() => {
+            document.querySelector(".container").style.backgroundColor = getRandomColor()
+        }, 20);
+        setInterval(() => {
+            document.querySelector(".box1").style.backgroundColor = getRandomColor()
+        }, 20);
+        setInterval(() => {
+            document.querySelector(".box2").style.backgroundColor = getRandomColor()
+        }, 20);
+    </script>
+</body>
+</html>
